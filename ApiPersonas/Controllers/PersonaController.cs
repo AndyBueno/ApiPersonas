@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ApiPersonas.Context;
 using ApiPersonas.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace ApiPersonas.Controllers
 {
+    [EnableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class PersonaController : ControllerBase
